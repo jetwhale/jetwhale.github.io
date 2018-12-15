@@ -11817,7 +11817,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[295]:</div>
+<div class="prompt input_prompt">In&nbsp;[349]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -11842,7 +11842,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[299]:</div>
+<div class="prompt input_prompt">In&nbsp;[350]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;QBStats_all.csv&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
@@ -11859,7 +11859,7 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[299]:</div>
+<div class="prompt output_prompt">Out[350]:</div>
 
 
 
@@ -11999,14 +11999,14 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>There are some good stats in here! However, we are mostly interested in the numerical. Lets ignore the Quarterback names and whether they were home or away and group these stats by year and perhaps look at the averages from year to year.</p>
+<p>There are some good stats in here! However, we are mostly interested in the numerical values. Lets ignore the Quarterback names and whether they were home or away and group these stats by year and perhaps look at the averages from year to year.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[327]:</div>
+<div class="prompt input_prompt">In&nbsp;[351]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;year&#39;</span><span class="p">)</span>
@@ -12025,7 +12025,7 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[327]:</div>
+<div class="prompt output_prompt">Out[351]:</div>
 
 
 
@@ -12346,7 +12346,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[328]:</div>
+<div class="prompt input_prompt">In&nbsp;[352]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">lm</span> <span class="o">=</span> <span class="n">linear_model</span><span class="o">.</span><span class="n">LinearRegression</span><span class="p">()</span>
@@ -12370,7 +12370,7 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[328]:</div>
+<div class="prompt output_prompt">Out[352]:</div>
 
 
 
@@ -12411,7 +12411,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[329]:</div>
+<div class="prompt input_prompt">In&nbsp;[353]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Y</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;yds&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
@@ -12434,7 +12434,7 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[329]:</div>
+<div class="prompt output_prompt">Out[353]:</div>
 
 
 
@@ -12475,7 +12475,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[330]:</div>
+<div class="prompt input_prompt">In&nbsp;[354]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Y</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;ypa&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
@@ -12498,7 +12498,7 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[330]:</div>
+<div class="prompt output_prompt">Out[354]:</div>
 
 
 
@@ -12539,7 +12539,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[304]:</div>
+<div class="prompt input_prompt">In&nbsp;[355]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Y</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;td&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
@@ -12562,7 +12562,7 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[304]:</div>
+<div class="prompt output_prompt">Out[355]:</div>
 
 
 
@@ -12603,7 +12603,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[312]:</div>
+<div class="prompt input_prompt">In&nbsp;[356]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Y</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;game_points&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
@@ -12626,7 +12626,7 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[312]:</div>
+<div class="prompt output_prompt">Out[356]:</div>
 
 
 
@@ -12660,14 +12660,14 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>which in turn leads to more points being scored each game.</p>
+<p>This leads to more total points being scored each game.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[315]:</div>
+<div class="prompt input_prompt">In&nbsp;[357]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Y</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;rate&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
@@ -12690,7 +12690,7 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[315]:</div>
+<div class="prompt output_prompt">Out[357]:</div>
 
 
 
@@ -12724,14 +12724,14 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Overall, this can be summarized by the average quarterback rating steadily climbing in the past 20 years. However, there are 2 stats that did not change/seem to have a correlation.</p>
+<p>Overall, this can be summarized by the average quarterback rating steadily climbing in the past 20 years. However, there are 2 stats that did not change/have a correlation.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[313]:</div>
+<div class="prompt input_prompt">In&nbsp;[358]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Y</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;sack&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
@@ -12754,7 +12754,7 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[313]:</div>
+<div class="prompt output_prompt">Out[358]:</div>
 
 
 
@@ -12795,7 +12795,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[314]:</div>
+<div class="prompt input_prompt">In&nbsp;[359]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Y</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;loss&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
@@ -12818,7 +12818,7 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[314]:</div>
+<div class="prompt output_prompt">Out[359]:</div>
 
 
 
@@ -12868,7 +12868,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[331]:</div>
+<div class="prompt input_prompt">In&nbsp;[360]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;nfl_offense_average.csv&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
@@ -12895,7 +12895,7 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[331]:</div>
+<div class="prompt output_prompt">Out[360]:</div>
 
 
 
@@ -12936,7 +12936,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[333]:</div>
+<div class="prompt input_prompt">In&nbsp;[361]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Y</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;rTD&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
@@ -12959,7 +12959,7 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[333]:</div>
+<div class="prompt output_prompt">Out[361]:</div>
 
 
 
@@ -12993,7 +12993,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>And there has been no improvement in the number of touchdowns scored in the same time frame as well. This suggests that teams continue to run the ball for roughly the same gain while passing more effectively. So while the NFL may be more offensive, the real gains can be attributed to QB performance. However, we looked how the average QB and how they have improved. Have the top QBs roughly improved around the same as the average QB or have they performed better? This is an important piece for determining whether teams that make the playoffs are becoming more offensive.</p>
+<p>And there has been no improvement in the number of touchdowns scored in the same time frame as well. This suggests that teams continue to run the ball for roughly the same gain while passing more effectively. So while the NFL may be more offensive, the real gains can be attributed to QB performance. However, we looked how the average QB and how they have improved. Have the top QBs roughly improved around the same as the average QB or have they performed better? This is an important piece for determining whether teams that make the playoffs are becoming more offensive and will determine if we will see more offensive driven playoff games and superbowls</p>
 
 </div>
 </div>
@@ -13009,7 +13009,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[326]:</div>
+<div class="prompt input_prompt">In&nbsp;[362]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;top_10_qbs.csv&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
@@ -13026,7 +13026,7 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[326]:</div>
+<div class="prompt output_prompt">Out[362]:</div>
 
 
 
@@ -13094,14 +13094,14 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The following code appends the top 10 to match the data from 1996-2016 and plots it</p>
+<p>The following code appends the top 10 to match the data from 1996-2016 and creates a plot</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[324]:</div>
+<div class="prompt input_prompt">In&nbsp;[363]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">arr</span> <span class="o">=</span> <span class="p">[]</span>
@@ -13136,7 +13136,7 @@ div#notebook {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[324]:</div>
+<div class="prompt output_prompt">Out[363]:</div>
 
 
 
@@ -13170,7 +13170,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The result is obvious. Comparing the graphs of the top QBs to the average QBs the top QBs have increased their yards by 27% while the average QB has increased their yards by 18% The difference is staggering! The top passing QBs 20 years ago would have barely made the top 10 today.</p>
+<p>The result is obvious. Comparing the graphs of the top QBs to the average QBs the top QBs have increased their yards by 27% while the average QB has increased their yards by 18% The difference is staggering! The top passing QBs 20 years ago would have barely made the top 10 today. While superbowl 52 set offensive records, with the current trend line, we will likely see similar offensive driven superbowls.</p>
 
 </div>
 </div>
